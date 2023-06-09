@@ -1,0 +1,63 @@
+.topButtons{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.App {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.outer {
+  height: 680px;
+  width: 1300px;
+  margin-left: 125px;
+  display: flex;
+  position: relative;
+  background-color: black;
+}
+
+.inner {
+  height: 600px;
+  background-color: white;
+  margin: auto; 
+  border-radius: 25px;
+  border: 5px solid #e8fc5e;
+}
+
+.label {
+  height: 20px;
+  white-space: nowrap;
+}
+
+.leaderboards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.leaderboard{
+  width: 600px;
+  height: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.globe {
+  margin-top: 65px;
+}
+
+.world {
+  margin: 20px 50px 0 50px;
+}
+
+.progressbar{
+  border: 3px solid black;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
