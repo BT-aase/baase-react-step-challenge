@@ -121,14 +121,14 @@ function App() {
                     src={Individual}
                     style={{ height: 120, width: 87 }}
                     alt="Individual Steps" />
-                  <Leaderboard headData={['Name', 'Total']} bodyData={stepData} type={'Individual'} />
+                  <Leaderboard headData={['Name', 'Total']} bodyData={stepData}/>
                 </div>
                 <div className='leaderboard'>
                   <img
                     src={Team}
                     style={{ height: 120, width: 130 }}
                     alt="Team Steps" />
-                  <Leaderboard headData={['Team', 'Total']} bodyData={teamSteps(stepData)} type={'Team'} />
+                  <Leaderboard headData={['Team', 'Total']} bodyData={teamSteps(stepData)}/>
                 </div>
               </div>
               <div className='globe'>
