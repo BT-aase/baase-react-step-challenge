@@ -54,13 +54,15 @@ function convert(event, setData) {
 }
 
 function generate() {
+  const date = new Date();
+
   html2canvas(document.querySelector('.outer')).then(canvas => {
     var pdf = new jsPDF("l", "px", [1000, 1800]);
     var imgData = canvas.toDataURL('image/png');
     var width = pdf.internal.pageSize.getWidth();
     var height = pdf.internal.pageSize.getHeight();
     pdf.addImage(imgData, 'PNG', 0, 0, width, height);
-    pdf.save('download.pdf');
+    pdf.save(`stepChallenge_${date.getMonth() + 1}_${date.getDate()}_23.pdf`);
   });
 };
 
